@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TPArrayBreakLabelled1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Recherche d'un nombre donné dans un tableau de tableaux
 
 		int[][] tab1 = { { 32, 87, 3, 589 }, { 12, 1076, 2000, 8 }, { 622, 127, 77, 955 } };
 
