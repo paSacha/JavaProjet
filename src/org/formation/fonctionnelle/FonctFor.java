@@ -25,7 +25,7 @@ public class FonctFor {
 
 		System.out.println("Etape 3: liste de villes");
 		for (String elem : tabVilles) {
-			if (elem == ville)
+			if (elem.equals(ville))
 				System.out.println("c'est ma ville préférée");
 			else
 				System.out.println("...");
