@@ -1,5 +1,8 @@
 package lanceur;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import domaine.DemandeFormation;
 import domaine.Employe;
 import domaine.Manager;
@@ -48,6 +51,20 @@ public class LanceurGestionFormations {
 		paie.listerFormationPersonnel(employe1);
 		paie.listerFormationPersonnel(man1);
 		
+		Collection<Employe> listeEmploye = new ArrayList<Employe>();
+		Collection<ManagerH> listeManager = new ArrayList<ManagerH>();
+		
+		listeEmploye.add(employe1);
+		listeManager.add(man1);
+		listeManager.add(man2);
+		
+		afficher(listeEmploye);
+		afficher(listeManager);
 	}
 
+	static void afficher(Collection<? extends Employe> list){
+		for (Employe e: list){
+			System.out.println(e.toString());
+		}
+	}
 }
